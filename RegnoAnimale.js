@@ -7,15 +7,15 @@ class RegnoAnimale {
     
     //getter
     getNome() {
-        return this._nome;
+        return this.nome;
     }
 
     getRegnoAnimale() {
-        return this._RegnoAnimale;
+        return this.RegnoAnimale;
     }
 
     //setter  
-    seNome(nome){
+    setNome(nome){
         this.nome = nome;
     }   
 }
@@ -29,7 +29,7 @@ class Vertebrati extends RegnoAnimale {
     }
 
     getDominio() {
-        return this._dominio;
+        return this.dominio;
     }
 }
 
@@ -55,4 +55,6 @@ console.log(pollo.nome+ " " + pollo.dominio + " " + pollo.RegnoAnimale);
 
 console.log("Le zampe del pollo sono: "+ pollo.Nzampe);
 console.log("Le zampe del rettile sono: "+ iguana.Nzampe);
+
+console.log(pollo.getDominio());
 
